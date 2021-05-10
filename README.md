@@ -1,4 +1,4 @@
-# 10-Days-of-Statistics-
+# 10-Days-of-Statistics
 Worked Solutions of Hackerrank's 10 Days of Statistics
 
 Day 0: Mean, Median, and Mode
