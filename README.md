@@ -19,7 +19,7 @@ print(data_s.mean())
 print(data_s.median())
 print(data_s.mode()[0])
 ```
-
+v.2
 ```python
 from collections import Counter
 n = int(input())
