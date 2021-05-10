@@ -6,7 +6,6 @@ Day 0: Mean, Median, and Mode Solution
 STDIN = input 
 from collections import Counter
 import pandas as pd 
-import numpy as np
 
 n = int(input())
 data = sorted([int(i) for i in input().split()]) 
@@ -18,18 +17,26 @@ print(data_s.mode()[0])
 ```
 
 ```python
-STDIN = input 
 from collections import Counter
-import pandas as pd 
-import numpy as np
-
 n = int(input())
-data = sorted([int(i) for i in input().split()]) 
-data_s = pd.Series(data)
+x = sorted(list(map(int, input().split())))
 
-print(data_s.mean())
-print(data_s.median())
-print(data_s.mode()[0])
+# mean
+mean = sum(x) / n
+
+# median
+if n % 2 == 1:
+    index = n // 2
+    median = x[index]
+else:
+    ind = n // 2
+    median = (x[ind-1] + x[ind]) / 2
+
+# mode
+counter = Counter(x)
+most_common = counter.most_common()
+mode = most_common[0]
+print("{:.1f}".format(mean), median, mode[0], sep="\n")
 ```
 Day 0: Weighted Mean
 Solution
