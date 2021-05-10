@@ -1,5 +1,9 @@
-# 10-Days-of-Statistics
+# 10-Days-of-Statistics-Python
 Worked Solutions of Hackerrank's 10 Days of Statistics
+- Day 0: Mean, Median, and Mode Solution
+- Day 0: Weighted Mean
+- Day 0: Quartiles
+- Day 1: Interquartile Range
 
 Day 0: Mean, Median, and Mode Solution
 ```python
