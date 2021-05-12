@@ -45,8 +45,33 @@ print("{:.1f}".format(mean), median, mode[0], sep="\n")
 Day 0: Weighted Mean
 Solution
 
+``` python 
+def weightedMean(X, W):
+    sum_of_weighted_grades = 0
+    
+    for i in range(n):
+        sum_of_weighted_grades += X[i]*W[i]  
+            
+    weighted_average = sum_of_weighted_grades / sum(W)
+    
+    return "{:.1f}".format(weighted_average)
+      
+    
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    vals = [int(i) for i in input().rstrip().split()]
+
+    weights = [int(i) for i in input().rstrip().split()]
+    
+    print(weightedMean(vals, weights))
+```
+
 Day 0: Quartiles
 Solution
 
 Day 1: Interquartile Range
 Solution
+
+Day 1: Standard Deviation
